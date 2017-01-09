@@ -3,10 +3,6 @@
 language: cpp
 sudo: false
 
-branches:
-  only:
-    - tests
-
 cache:
   directories:
     - ${TRAVIS_BUILD_DIR}/deps/cmake
