@@ -34,7 +34,6 @@ public:
     virtual void execute() = 0;
 };
 
-//using ExecuterInterfacePtrArray = std::array<ExecuteInterface*, InterfaceSize>;
 using ExecuterInterfacePtrArray = std::array<std::shared_ptr<ExecuteInterface>, InterfaceSize>;
 
 // 2. Design a "wrapper" or "adapter" class
@@ -46,12 +45,7 @@ public:
     _object {o},
     _method {m}
     {}
-    
-    ExecuteAdapter (/*const*/ ExecuteAdapter& other) { std::cout << "calling copy ctor\n"; }
-    ExecuteAdapter (/*const*/ ExecuteAdapter&& other) { std::cout << "move ctor\n"; }
-    ExecuteAdapter& operator=(/*const*/ ExecuteAdapter& other) { std::cout << "calling copy assign\n"; }
-    ExecuteAdapter& operator=(/*const*/ ExecuteAdapter&& other) { std::cout << "calling move assign\n"; }
-    
+        
     ~ExecuteAdapter() {
         delete _object;
     }

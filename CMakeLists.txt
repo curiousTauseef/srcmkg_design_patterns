@@ -7,5 +7,11 @@ project(srcmkg_design_patterns)
 add_definitions(-std=c++14)
 set(CMAKE_CXX_FLAGS "${CMAXE_CXX_FLAGS} -Wall")
 
+
 #Subdirdirectories to build
 add_subdirectory(structural)
+
+
+## tests
+enable_testing()
+add_subdirectory(tests)
