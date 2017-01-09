@@ -1,6 +1,8 @@
 # srcmkg\_design\_patterns
 tweaked design patterns examples (C++) from sourcemaking.com 
 
+[![Build Status](https://travis-ci.org/tlanc007/srcmkg_design_patterns.svg?branch=master)](https://travis-ci.org/tlanc007/srcmkg_design_patterns)
+
 ## Table of Contents
 * [Background](#background)
 * Structural
