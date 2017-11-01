@@ -1,0 +1,9 @@
+for adapter consider vector or array and use smart pointer 
+move old interface to own file
+move new interface to own file
+have main in own file
+
+mention can't change old
+mention could use vector to be more general, but if know code will have fixed size elements, array is lighter weight as it doesn't have to worry about being resized.
+
+can these be unique ptrs? unique<unique>? there is a delete in the execute class.  It would be nice to get rid of it.
